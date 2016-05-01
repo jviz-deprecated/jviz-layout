@@ -1,0 +1,6 @@
+{
+	"name": "jviz-layout",
+	"description": "The jviz layout module",
+	"buildPath": "./build/",
+	"dependencies": { "jviz": "dev" }
+}
