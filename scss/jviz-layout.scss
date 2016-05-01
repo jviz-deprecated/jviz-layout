@@ -1,0 +1,15 @@
+//Import jviz
+@import "{JVIZ_MODULES}jviz/scss/all";
+
+//Import all mixins
+@import "all";
+
+//Layout main class
+.jvizLayout
+{
+	//Dashboard layout
+	&-dashboard { @include jvizLayoutDashboard(); }
+	
+	//Website layout
+	&-website { @include jvizLayoutWebsite(); }
+}
