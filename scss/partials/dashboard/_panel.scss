@@ -1,0 +1,100 @@
+//jviz layout dashboard panel
+@mixin jvizLayoutDashboardPanel($list, $color)
+{
+	//Display
+	display: inline-block; overflow-y: auto; vertical-align: top;
+
+	//Size
+	width: 220px; height: calc(100% - 0px); line-height: 20px;
+
+	//Colors
+	background-color: nth($list, 3); color: $color;
+
+	//Padding
+	padding: { left: 0px; right: 0px; top: 0px; }
+
+	//Panel Logo
+	&-logo
+	{
+		//Display
+		display: block; cursor: hand; transition: all 0.3s;
+
+		//Size
+		height: 50px; width: 100%; line-height: 50px;
+
+		//Font
+		@include jvizFontBold; font-size: 22px; text: { decoration: none; align: center; }
+
+		//Background
+		background-color: nth($list, 2);
+
+		//Margin
+		margin: { top: 0px; bottom: 15px; }
+
+		//Logo hover
+		&:hover { text-decoration: none; color: rgba($color, 0.6); }
+	}
+
+	//Panel text
+	&-text
+	{
+		//Display
+		display: block; width: calc(100% - 20px); line-height: 20px;
+
+		//Padding
+		padding: { left: 10px; right: 10px; top: 0px; bottom: 0px; }
+
+		//Margin
+		margin: { left: auto; right: auto; top: 15px; bottom: 15px; }
+	}
+
+	//Panel box
+	&-box
+	{
+		//Display
+		display: block; width: calc(100% - 40px); line-height: 20px;
+
+		//Background
+		background-color: nth($list, 1);
+
+		//Font
+		font-size: 14px;
+
+		//Margin
+		margin: { left: auto; right: auto; top: 15px; bottom: 15px; }
+
+		//Padding
+		padding: { top: 10px; bottom: 10px; left: 10px; right: 10px; }
+
+		//Border
+		border: { radius: 5px; }
+	}
+
+	//Panel link
+	&-link
+	{
+		//Display
+		display: block; width: calc(100% - 35px); cursor: hand; transition: all 0.3s;
+
+		//Text
+		text-decoration: none; color: $color;
+
+		//Padding
+		padding: { top: 6px; bottom: 6px; left: 10px; right: 5px; }
+
+		//Margin
+		margin: { top: 0px; bottom: 5px; left: auto; right: auto; }
+
+		//Border
+		border: { radius: 5px; }
+
+		//Background
+		background-color: rgba(nth($list, 1), 0.3);
+
+		//Link hover
+		&:hover { text-decoration: none; background-color: rgba(nth($list, 1), 0.7); }
+
+		//Last child
+		&:last-child { margin: { bottom: 15px; } }
+	}
+}
