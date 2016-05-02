@@ -1,0 +1,44 @@
+//jviz layout dashboard bar
+@mixin jvizLayoutDashboardBar($list, $color)
+{
+	//Display
+	display: block; position: fixed; top: 0px; left: 220px;
+
+	//Size
+	width: calc(100% - 235px); height: 50px; line-height: 50px;
+
+	//Background
+	background-color: nth($list, 3);
+
+	//Bar link
+	&-link
+	{
+		//Display
+		display: inline-block; cursor: hand; border-radius: 5px; transition: all 0.3s;
+
+		//Size
+		height: 30px; line-height: 30px;
+
+		//Text
+		@include jvizFontBold; text: { decoration: none; align: center; } color: $color !important;
+
+		//Background
+		background-color: rgba(nth($list, 1), 0.3);
+
+		//Padding
+		padding: { left: 15px; right: 15px; top: 0px; bottom: 0px; }
+
+		//Margin
+		margin: { top: 10px; bottom: 0px; left: 6px; right: 6px; }
+
+		//Hover
+		&:hover
+		{
+			//Hover color
+			color: $color !important; background-color: rgba(nth($list, 1), 0.7);
+
+			//Text
+			text-decoration: none !important;
+		}
+	}
+}
