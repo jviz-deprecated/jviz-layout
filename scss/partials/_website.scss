@@ -1,0 +1,30 @@
+//jviz layout website
+@mixin jvizLayoutWebsite()
+{
+	//Display
+	display: block; vertical-align: top;
+
+	//Font
+	@include jvizFontNormal; font-size: 14px;
+
+	//Size
+	width: 100%; height: 100%;
+
+	//Padding
+	padding: { left: 0px; right: 0px; top: 0px; bottom: 0px; }
+
+	//Margin
+	margin: { left: 0px; right: 0px; top: 0px; bottom: 0px; }
+
+	//Navbar
+	&-navbar { @include jvizLayoutWebsiteNavbar($jvizBlueList, $jvizWhite); }
+
+	//Jumbotron
+	&-jumbotron { @include jvizLayoutWebsiteJumbotron; }
+
+	//Main content
+	&-main { @include jvizLayoutWebsiteMain; }
+
+	//Foot
+	&-foot { @include jvizLayoutWebsiteFoot; }
+}
