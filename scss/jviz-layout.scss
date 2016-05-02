@@ -8,8 +8,8 @@
 .jvizLayout
 {
 	//Dashboard layout
-	&-dashboard { @include jvizLayoutDashboard(); }
-	
+	&Dashboard { @include jvizLayoutDashboard($jvizRedList); }
+
 	//Website layout
-	&-website { @include jvizLayoutWebsite(); }
+	&Website { @include jvizLayoutWebsite(); }
 }
