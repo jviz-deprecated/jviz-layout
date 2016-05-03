@@ -1,0 +1,30 @@
+//jviz layout dashboard
+@mixin jvizLayoutDashboard($list: $jvizNavyList, $color: $jvizWhite)
+{
+	//Display
+	display: block; vertical-align: top;
+
+	//Font
+	@include jvizFontNormal; font-size: 14px;
+
+	//Size
+	width: 100%; height: 100%;
+
+	//Padding
+	padding: { left: 0px; right: 0px; top: 0px; bottom: 0px; }
+
+	//Margin
+	margin: { left: 0px; right: 0px; top: 0px; bottom: 0px; }
+
+	//Panel
+	&-panel { @include jvizLayoutDashboardPanel($list, $color); }
+
+	//Main content
+	&-main { @include jvizLayoutDashboardMain(); }
+
+	//Bar
+	&-bar { @include jvizLayoutDashboardBar($list, $color); }
+
+	//Bar space
+	&-bar-space { display: block; width: 100%; height: 50px; }
+}
