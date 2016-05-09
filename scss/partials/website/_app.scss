@@ -37,6 +37,9 @@
 			//Background
 			background-color: $jvizGrey4;
 
+			//Text
+			@include jvizFondNormal; font-size: 13px;
+
 			//Border
 			border-radius: 5px;
 
@@ -50,10 +53,10 @@
 			&-space { display: block; width: 100%; height: 15px; }
 
 			//Title
-			&-title { @include jvizFontBold; font-size: 18px; margin: { bottom: 8px; } }
+			&-title { @include jvizFontBold; font-size: 15px; margin: { bottom: 8px; } }
 
 			//Subtitle
-			&-subtitle { @include jvizFontBold; font-size: 15px; margin: { bottom: 8px; } }
+			&-subtitle { @include jvizFontBold; font-size: 14px; margin: { bottom: 8px; } }
 
 			//Panel description
 			&-description { margin: { bottom: 8px; } }
@@ -75,7 +78,7 @@
 			}
 
 			//Button
-			&-btn { @include jvizFormBtnBlue; margin: { left: 0px; right: auto; bottom: 10px; top: 0px; } }
+			&-btn { @include jvizFormBtnBlue; margin: { left: 0px; right: auto; bottom: 5px; top: 10px; } }
 		}
 	}
 
