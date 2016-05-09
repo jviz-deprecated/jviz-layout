@@ -8,7 +8,7 @@
 	position: absolute; top: 0px; left: 0px;
 
 	//Background
-	background-color: nth($list, 1);
+	background-color: nth($list, 2);
 
 	//Font
 	@include jvizFontBold; font-size: 14px;
@@ -61,7 +61,7 @@
 		border-radius: 5px;
 
 		//Background color
-		background-color: nth($list, 2);
+		background-color: nth($list, 1);
 
 		//Padding
 		padding: { top: 0px; bottom: 0px; left: 10px; right: 10px; }
@@ -70,7 +70,7 @@
 		margin: { top: 15px; bottom: 15px; left: 10px; right: 0px; }
 
 		//Hover
-		&:hover { text-decoration: none; cursor: hand; background-color: nth($list, 4);}
+		&:hover { text-decoration: none; cursor: hand; background-color: nth($list, 3);}
 	}
 
 	//Navbar space
