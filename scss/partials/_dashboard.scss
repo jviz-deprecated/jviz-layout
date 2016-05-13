@@ -19,8 +19,11 @@
 	//Panel
 	&-panel { @include jvizLayoutDashboardPanel($list, $color); }
 
-	//Main content
-	&-main { @include jvizLayoutDashboardMain(); }
+	//Main
+	&-main { @include jvizLayoutDashboardMain; }
+
+	//Content
+	&-content { @include jvizLayoutDashboardContent; }
 
 	//Bar
 	&-bar { @include jvizLayoutDashboardBar($list, $color); }
