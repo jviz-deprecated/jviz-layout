@@ -11,10 +11,10 @@
 	background-color: nth($list, 3);
 
 	//Media
-	@media(min-width: 1300px)
+	@media(min-width: 1450px)
 	{
 		//Bar style
-		& { width: 1080px; left: calc(50% - 430px); }
+		& { width: 1230px; left: calc(50% - 505px); }
 	}
 
 	//Bar link
