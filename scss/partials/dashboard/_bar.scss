@@ -5,10 +5,17 @@
 	display: block; position: fixed; top: 0px; left: 220px;
 
 	//Size
-	width: calc(100% - 235px); height: 50px; line-height: 50px;
+	width: calc(100% - 220px); height: 50px; line-height: 50px;
 
 	//Background
 	background-color: nth($list, 3);
+
+	//Media
+	@media(min-width: 1300px)
+	{
+		//Bar style
+		& { width: 1080px; left: calc(50% - 430px); }
+	}
 
 	//Bar link
 	&-link
