@@ -1,11 +1,11 @@
-//jviz layout dashboard panel
-@mixin jvizLayoutDashboardPanel($list, $color)
+//jviz layout dashboard sidebar
+@mixin jvizLayoutDashboardSidebar($list, $color)
 {
 	//Display
-	display: inline-block; overflow-y: auto; vertical-align: top;
+	display: inline-block; overflow-y: auto; vertical-align: top; float: left;
 
 	//Size
-	width: 220px; height: calc(100% - 0px); line-height: 20px;
+	width: 220px; height: 100%; line-height: 20px;
 
 	//Colors
 	background-color: nth($list, 3); color: $color;
@@ -13,7 +13,7 @@
 	//Padding
 	padding: { left: 0px; right: 0px; top: 0px; }
 
-	//Panel Logo
+	//Sidebar Logo
 	&-logo
 	{
 		//Display
@@ -35,7 +35,7 @@
 		&:hover { text-decoration: none; color: rgba($color, 0.6); }
 	}
 
-	//Panel text
+	//Sidebar text
 	&-text
 	{
 		//Display
@@ -48,7 +48,7 @@
 		margin: { left: auto; right: auto; top: 15px; bottom: 15px; }
 	}
 
-	//Panel box
+	//Sidebar box
 	&-box
 	{
 		//Display
@@ -70,7 +70,7 @@
 		border: { radius: 5px; }
 	}
 
-	//Panel link
+	//Sidebar link
 	&-link
 	{
 		//Display
