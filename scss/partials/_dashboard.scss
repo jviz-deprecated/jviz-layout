@@ -23,10 +23,10 @@
 	margin: { left: 0px; right: 0px; top: 0px; bottom: 0px; }
 
 	//Media
-	@media(min-width: 1300px)
+	@media(min-width: 1450px)
 	{
 		//Dashboard style
-		& { width: 1300px; padding: { left: calc(50% - 650px); right: calc(50% - 650px); } }
+		& { width: 1450px; padding: { left: calc(50% - 725px); right: calc(50% - 725px); } }
 	}
 
 	//Sidebar
