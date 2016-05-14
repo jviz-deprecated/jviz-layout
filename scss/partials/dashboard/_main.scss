@@ -4,20 +4,26 @@
 	//Display
 	display: inline-block; vertical-align: top; float: right;
 
+	//Position
+	position: fixed; top: 50px;
+
 	//Overflow
 	overflow-y: scroll; overflow-x: hidden;
 
 	//Size
-	width: calc(100% - 260px); height: calc(100% - 70px);
+	width: calc(100% - 260px); height: calc(100% - 90px);
 
 	//Padding
-	padding: { left: 20px; right: 20px; top: 50px; bottom: 20px; }
+	padding: { left: 20px; right: 20px; top: 20px; bottom: 20px; }
 
 	//Margin
 	margin: { top: 0px; bottom: 0px; left: 0px; right: 0px; }
 
 	//Background
 	background-color: $jvizWhite;
+
+	//Media
+	@media(min-width: 1450px){ & { width: 1190px; } }
 
 	//Panel
 	&-panel
