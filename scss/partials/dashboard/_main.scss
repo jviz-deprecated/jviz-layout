@@ -29,18 +29,34 @@
 		border: { bottom: 1px solid $jvizGrey4; }
 
 		//Padding
-		padding: { top: 0px; bottom: 40px; left: 10px; right: 10px; }
+		padding: { top: 25px; bottom: 25px; left: 10px; right: 10px; }
 
 		//Margin
-		margin: { top: 10px; bottom: 40px; left: auto; right: auto; }
+		margin: { top: 10px; bottom: 10px; left: auto; right: auto; }
 
 		//Panel description
-		&-description { display: inline-block; width: 200px; float: left; vertical-align: top; }
+		&-description
+		{
+			//Description style
+			display: inline-block; width: 270px; float: left; vertical-align: top;
+
+			//Description title
+			&-title { display: block; @include jvizFontBold; font-size: 15px; margin: { bottom: 5px; } }
+		}
 
 		//Panel content
-		&-content { display: inline-block; width: calc(100% - 250px); float: right; vertical-align: top; }
+		&-content
+		{
+			//Content style
+			display: inline-block; width: calc(100% - 300px); float: right; vertical-align: top;
 
-		//Panel form
-		&-input { @include jvizFormInput; width: calc(100% - 10px); }
+			//Padding
+			padding: { top: 5px; }
+
+			//Content input
+			&-input { @include jvizFormInput; width: calc(100% - 10px); }
+		}
 	}
+
+	//Close main
 }
