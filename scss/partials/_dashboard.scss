@@ -13,9 +13,6 @@
 	//Size
 	width: 100%; height: 100%;
 
-	//Background
-	background-color: nth($list, 3);
-
 	//Padding
 	padding: { left: 0px; right: 0px; top: 0px; bottom: 0px; }
 
@@ -26,7 +23,33 @@
 	@media(min-width: 1450px)
 	{
 		//Dashboard style
-		& { width: 1450px; padding: { left: calc(50% - 725px); right: calc(50% - 725px); } }
+		& { width: 1450px; margin: { left: calc(50% - 725px); right: calc(50% - 725px); } }
+
+		//Dashboard before
+		&:before
+		{
+			//Style
+			display: block; content: " "; width: calc(50% - 725px); height: 100%; float: left;
+
+			//Position
+			position: fixed; top: 0px; left: 0px;
+
+			//Background
+			background-color: nth($list, 3);
+		}
+
+		//Dashboard after
+		&:after
+		{
+			//Style
+			display: block; content: " "; width: calc(50% - 725px); height: 100%; float: right;
+
+			//Position
+			position: fixed; top: 0px; right: 0px;
+
+			//Background
+			background-color: nth($list, 3);
+		}
 	}
 
 	//Sidebar
