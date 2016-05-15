@@ -45,9 +45,6 @@
 		{
 			//Description style
 			display: inline-block; width: 270px; float: left; vertical-align: top;
-
-			//Description title
-			&-title { display: block; @include jvizFontBold; font-size: 15px; margin: { bottom: 5px; } }
 		}
 
 		//Panel content
@@ -55,13 +52,13 @@
 		{
 			//Content style
 			display: inline-block; width: calc(100% - 300px); float: right; vertical-align: top;
-
-			//Padding
-			padding: { top: 5px; }
-
-			//Content input
-			&-input { @include jvizFormInput; width: calc(100% - 10px); }
 		}
+
+		//Panel title
+		&-title { display: block; @include jvizFontBold; font-size: 15px; margin: { bottom: 5px; } }
+
+		//Panel input
+		&-input { @include jvizFormInput; width: calc(100% - 10px); margin: { left: 0px; bottom: 15px; } }
 	}
 
 	//Close main
